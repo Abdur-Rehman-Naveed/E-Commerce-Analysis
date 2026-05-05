@@ -6,4 +6,3 @@ seaborn
 scipy
 scikit-learn
 openpyxl
-tabulate

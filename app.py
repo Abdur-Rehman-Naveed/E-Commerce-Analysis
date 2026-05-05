@@ -15,7 +15,7 @@ import textwrap
 import warnings
 warnings.filterwarnings('ignore')
 
-# --- Page Config ---
+# Page Config
 st.set_page_config(page_title="Retail Data Intelligence", page_icon="📈", layout="wide")
 
 # Custom CSS for aesthetics
@@ -78,9 +78,7 @@ def load_data():
     rfm['Segment'] = rfm['RFM_Score'].apply(segment)
     return df_clean, rfm
 
-# ─────────────────────────────────────────────────────────────────────────────
 # MODULES
-# ─────────────────────────────────────────────────────────────────────────────
 
 def fmt_currency(val): return f"£{val:,.2f}"
 def fmt_num(val, dec=2): return f"{val:,.{dec}f}"
@@ -340,7 +338,6 @@ def module_product_geo(df):
         top_geo = df.groupby('Country').agg(Rev=('TotalPrice','sum')).sort_values('Rev', ascending=False).head(10).reset_index()
         st.dataframe(top_geo.style.format({'Rev': '£{:.2f}'}))
 
-# --- Main App ---
 def main():
     with st.sidebar:
         st.image("https://cdn-icons-png.flaticon.com/512/3144/3144456.png", width=100)
