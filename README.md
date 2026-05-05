@@ -1,7 +1,9 @@
 # E-Commerce Analysis
 
 ## Overview
-This project is a comprehensive data analysis and predictive modeling application for retail e-commerce data. It features a Streamlit web application (`app.py`) for interactive data exploration and a comprehensive analysis script (`retail_analysis.py`) for generating detailed reports, probability distributions, customer segmentation (RFM & K-Means), and sales predictions.
+This project is a comprehensive data analysis and predictive modeling application for retail e-commerce data. It features a Streamlit web application (`app.py`) for interactive data exploration and a comprehensive analysis script for generating detailed reports, probability distributions, customer segmentation (RFM & K-Means), and sales predictions.
+
+github link: https://github.com/Abdur-Rehman-Naveed/E-Commerce-Analysis
 
 ## Features
 - **Descriptive Statistics**: Core distributions and order-level statistics.
